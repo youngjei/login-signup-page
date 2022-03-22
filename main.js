@@ -22,9 +22,10 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
+//꼭! (app)을 해야 한다
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
-const dbRef = ref(getDatabase());
+const dbRef = ref(getDatabase(app));
 
 document.getElementById("signOut").addEventListener("click", function () {
   signOut(auth)
