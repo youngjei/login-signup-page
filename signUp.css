@@ -1,0 +1,15 @@
+.main {
+  margin: auto;
+  margin-top: 12%;
+  font-size: 78px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: #298e46;
+  text-align: center;
+}
+
+.group {
+  flex-direction: column;
+  margin: auto;
+  margin-top: 2%;
+  text-align: center;
+}
