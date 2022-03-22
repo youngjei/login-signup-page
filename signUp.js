@@ -35,6 +35,10 @@ document.getElementById("signUp").addEventListener("click", function () {
   const password = document.getElementById("password").value;
   const username = document.getElementById("username").value;
 
+  set(ref(database, "test/"), {
+    test: "test",
+  });
+
   // User is created in Authentication section, under User
   createUserWithEmailAndPassword(auth, email, password)
     .then((userCredential) => {
